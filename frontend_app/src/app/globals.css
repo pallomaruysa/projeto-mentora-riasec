@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+:root {
+  --brand-text: #333f70;
+  --brand-grad-light: #79ddf5;
+  --brand-grad-dark: #66b7fe;
+  --brand-question-bg: #eafefdec;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --brand-text: #333f70;
+    --brand-grad-light: #79ddf5;
+    --brand-grad-dark: #66b7fe;
+  }
+}
+
+/* Aplicar estilos diretos ao body usando CSS */
+body {
+  color: var(--brand-text);
+  background: linear-gradient(to bottom, white, var(--brand-grad-light), var(--brand-grad-dark));
+}
+
+/* Classe utilitária customizada para o fundo dos blocos de perguntas */
+.bg-brand-question-bg {
+  background-color: var(--brand-question-bg);
+}
+
+/* Classe utilitária para a cor do gradiente (usada nos botões) */
+.bg-brand-grad-light {
+  background-color: var(--brand-grad-light);
+}
+
+/* Classe utilitária para a cor escura do gradiente (usada na barra de progresso) */
+.bg-brand-grad-dark {
+  background-color: var(--brand-grad-dark);
+}
